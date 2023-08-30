@@ -191,6 +191,8 @@ section {
 
 
 .philosophy img {
+    width: 40vw;
+    height: 45vw;
     object-fit: cover;
 }
 
@@ -201,8 +203,9 @@ section {
 
 .philosophy {
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 2rem;
     background: var(--second-bg-color);
 }
@@ -221,10 +224,11 @@ section {
 }
 
 .philosophy-content p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 2;
-    margin: 5rem 0 3rem;
+    margin: 7rem 0 3rem;
     padding: 3rem;
+    background: transparent;
 }
 
 
@@ -393,7 +397,7 @@ section {
   .absg {
     /* display: flex; */
     /* justify-content: space-between; */
-    max-width: 1500px;
+    max-width: 100%;
     /* margin: 5% auto; */
     margin-left: 9%;
     margin-top: 1%;
@@ -401,7 +405,7 @@ section {
     /* padding: 0 20px; */
     padding-top: 5px;
     background: transparent;
-    max-height: 40%;
+    max-height: 50%;
   }
   hr{
     margin-left: 10%;
@@ -424,7 +428,7 @@ section {
     display: flex;
    /* justify-content: right; */
    margin-left: 50%;
-    /* background:  transparent; */
+    /* background:  transparent;*/
 }
 
 .inner a {
@@ -572,7 +576,43 @@ section {
     color: var(--text-color);
 }
 
+
 /* Media Query for Mobile Devices */
+
+/* BREAKPOINTS */
+@media (max-width: 1200px){
+    html {
+        font-size: 55%;
+    }
+}
+
+
+@media (max-width: 991px){
+    .header {
+        padding: 2rem 3%;
+    }
+
+    .section {
+        padding: 10rem 3% 2rem;
+    }
+
+
+    .clientele,
+    .philosophy {
+        padding-bottom: 7rem;
+    }
+    
+
+    .Gallery {
+        min-height: auto;
+}
+
+    .footer {
+        padding: 2rem 3%;
+    }
+}
+
+
 @media (max-width: 768px) {
    
     .home {
@@ -608,6 +648,10 @@ section {
         color: var(--bg-color);
     }
 
+    .home {
+        flex-direction: column;
+   }
+
     .home .home-content h1{
         justify-content: center;
         align-items: center;
@@ -623,13 +667,51 @@ section {
     #menu-icon {
         display: block;
     }
-/* Adjust the clientele section styles */
-/* .clientele{
-    flex-direction: column-reverse;
+
+    .clientele,
+    .philosophy {
+        flex-direction: column-reverse;
+    }
+
+    .Gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .get {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
-.clientele .clientele-image img {
-    width: 20rem;
-    height: 20rem;
-} */
+@media (max-width: 617px) {
+    .Gallery-container {
+        grid-template-columns: 1fr;
+    }
 }
+    
+
+@media (max-width: 450PX) {
+    html {
+        font-size: 50%;
+    }
+}
+
+
+@media (max-width: 365px){
+    .home-img img {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .footer p {
+        text-align: center;
+        margin-top: 2rem;
+    }
+    
+} 
+
