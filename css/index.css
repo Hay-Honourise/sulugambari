@@ -682,6 +682,11 @@ section {
         align-items: center;
         justify-content: center;
     }
+
+    .footer .footer_nav .inner {
+        margin: 0%;
+        
+    }
 }
 
 @media (max-width: 617px) {
