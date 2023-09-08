@@ -651,7 +651,8 @@ section {
 
     .home {
         flex-direction: column;
-        /* background:none; */
+        background-image: none !important;
+        /* max-height: 40vh !important; */
    }
 
     .home .home-content h1{
@@ -673,6 +674,16 @@ section {
     .clientele,
     .philosophy {
         flex-direction: column-reverse;
+    }
+
+
+    .philosophy .philosophy-content {
+        width: auto;
+    }
+
+    .philosophy .philosophy-content p {
+        font-size: 10px;
+        font-weight: 500;
     }
 
     .Gallery-container {

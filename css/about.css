@@ -365,7 +365,7 @@ section {
    
     .home {
         flex-direction: column;
-        max-height: 20vh;
+        background-image: none !important;
     }
 
     .logo {
