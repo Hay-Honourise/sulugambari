@@ -326,10 +326,46 @@ section {
 }
 
 /* Media Query for Mobile Devices */
+
+/* BREAKPOINTS */
+@media (max-width: 1200px){
+    html {
+        font-size: 55%;
+    }
+}
+
+
+@media (max-width: 991px){
+    .header {
+        padding: 2rem 3%;
+    }
+
+    .section {
+        padding: 10rem 3% 2rem;
+    }
+
+
+    .clientele,
+    .philosophy {
+        padding-bottom: 7rem;
+    }
+    
+
+    .Gallery {
+        min-height: auto;
+}
+
+    .footer {
+        padding: 2rem 3%;
+    }
+}
+
+
 @media (max-width: 768px) {
    
     .home {
         flex-direction: column;
+        max-height: 20vh;
     }
 
     .logo {
@@ -361,11 +397,16 @@ section {
         color: var(--bg-color);
     }
 
+    .home {
+        flex-direction: column;
+        /* background:none; */
+   }
+
     .home .home-content h1{
         justify-content: center;
         align-items: center;
         display: block;
-        font-size: 1.8rem;
+        font-size: 4rem;
         padding-right: 5rem;
     }
 
@@ -376,13 +417,78 @@ section {
     #menu-icon {
         display: block;
     }
-/* Adjust the clientele section styles */
-/* .clientele{
-    flex-direction: column-reverse;
+
+    .clientele,
+    .philosophy {
+        flex-direction: column-reverse;
+    }
+
+    .Gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .get {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .absg .logo {
+        font-size: 10px;
+    }
+
+
+    .footer .footer_nav .inner {
+        margin: 0%;
+        gap: 0.2rem;
+        /* margin-right: 5%; */
+        /* padding: 0%; */
+    }
+
+    .footer .footer_nav .inner a{
+        width: 20px;
+        height: 20px;
+    }
+
+    .footer-text a {
+        display: none;
+    }
+    
+    .footer-text {
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 
-.clientele .clientele-image img {
-    width: 20rem;
-    height: 20rem;
-} */
+@media (max-width: 617px) {
+    .Gallery-container {
+        grid-template-columns: 1fr;
+    }
 }
+    
+
+@media (max-width: 450PX) {
+    html {
+        font-size: 50%;
+    }
+}
+
+
+@media (max-width: 365px){
+    .home-img img {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .footer p {
+        text-align: center;
+        margin-top: 2rem;
+    }
+    
+} 
+

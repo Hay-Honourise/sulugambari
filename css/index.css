@@ -617,6 +617,7 @@ section {
    
     .home {
         flex-direction: column;
+        max-height: 20vh;
     }
 
     .logo {
@@ -650,13 +651,14 @@ section {
 
     .home {
         flex-direction: column;
+        /* background:none; */
    }
 
     .home .home-content h1{
         justify-content: center;
         align-items: center;
         display: block;
-        font-size: 1.8rem;
+        font-size: 4rem;
         padding-right: 5rem;
     }
 
@@ -683,10 +685,32 @@ section {
         justify-content: center;
     }
 
+    .absg .logo {
+        font-size: 10px;
+    }
+
+
     .footer .footer_nav .inner {
         margin: 0%;
-        
+        gap: 0.2rem;
+        /* margin-right: 5%; */
+        /* padding: 0%; */
     }
+
+    .footer .footer_nav .inner a{
+        width: 20px;
+        height: 20px;
+    }
+
+    .footer-text a {
+        display: none;
+    }
+    
+    .footer-text {
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 
 @media (max-width: 617px) {
